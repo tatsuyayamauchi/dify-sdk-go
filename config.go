@@ -10,5 +10,5 @@ type ClientConfig struct {
 	ApiSecretKey     string // deprecated: use DefaultAPISecret instead
 	DefaultAPISecret string
 	Timeout          time.Duration
-	Transport        *http.Transport
+	Transport        http.RoundTripper
 }
